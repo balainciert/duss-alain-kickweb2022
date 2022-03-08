@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.back-div {
+  display: block;
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+}
+
+.back-a {
+  color: white;
+  text-decoration: none;
+  font-family: "DM Sans";
+  font-size: 20px;
+  display: inline-block;
+}
+
+.back-a:hover {
+  background: linear-gradient(180deg, #35d5fd 0%, #e355ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.material-icons-outlined {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Material Icons";
+  margin-right: 15px;
+  display: inline-block;
+  transform: translateY(3.5px);
+}
+
+.back-a:hover .material-icons-outlined {
+  background: linear-gradient(180deg, #35d5fd 0%, #e355ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+body {
+    background-image: url("background-gradient.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+  }
+
+  img {
+    width: 450px;
+    height: auto;
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: auto;
+    display: block;
+    border-radius: 10px;
+  }
+
+  img:hover {
+    opacity: 0.2;
+  }

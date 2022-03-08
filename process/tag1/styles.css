@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.back-div {
+  display: block;
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+}
+
+.back-a {
+  color: white;
+  text-decoration: none;
+  font-family: "DM Sans";
+  font-size: 20px;
+  display: inline-block;
+}
+
+.back-a:hover {
+  background: linear-gradient(180deg, #35d5fd 0%, #e355ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.material-icons-outlined {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Material Icons";
+  margin-right: 15px;
+  display: inline-block;
+  transform: translateY(3.5px);
+}
+
+.back-a:hover .material-icons-outlined {
+  background: linear-gradient(180deg, #35d5fd 0%, #e355ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+body {
+  font-family: "Archivo Narrow", Times, serif;
+  margin: 0px;
+}
+
+h1 {
+font-size: 8em;
+font-weight: 700;
+}
+h4 {
+font-weight: 700;
+font-style: italic;
+font-size: 2.5em;
+}
+p {
+font-weight: 400;
+font-size: 1em;
+}
