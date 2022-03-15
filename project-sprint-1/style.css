@@ -1,0 +1,61 @@
+body {
+    font-family: Bebas Neue Pro;
+    font-size: 80px;
+    color: white;
+    margin: 0;
+}
+
+.gedanke {
+    background-color: #340041;
+    display: block;
+    min-height: 100vh;
+    position: relative;
+}
+
+.gedanke p {
+    margin: 0;
+}
+
+.chopf {
+    display: block;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(0deg, #000, #340041);
+}
+
+.chopf p {
+    margin: 0;
+}
+
+.schlaflos {
+    display: block;
+    min-height: 100vh;
+    position: relative;
+    background: #000;
+}
+
+.schlaflos p {
+    margin: 0;
+}
+
+.display {
+    display: block;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(0deg, #070E4B, #000);
+}
+
+.display p {
+    margin: 0;
+}
+
+.time {
+    display: block;
+    min-height: 100vh;
+    position: relative;
+    background: #070E4B;
+}
+
+.time p {
+    margin: 0;
+}
