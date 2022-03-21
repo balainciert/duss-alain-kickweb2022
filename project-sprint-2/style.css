@@ -16,6 +16,17 @@ body {
     margin: 0;
 }
 
+.tuusiggedanke {
+    color: black;
+    position: absolute;
+    font-size: 20px;
+
+}
+
+#tuusigwrapper {
+    position: relative;
+}
+
 .chopf {
     display: block;
     min-height: 100vh;
@@ -59,3 +70,21 @@ body {
 .time p {
     margin: 0;
 }
+
+svg path {
+    stroke-width: 3;
+    stroke-dasharray: 41786.625;
+    stroke-dashoffset: 41786.625;
+    animation-name: draw;
+      animation-duration: 20s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+  }
+  
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  

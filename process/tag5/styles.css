@@ -86,6 +86,14 @@ h1 {
   background: linear-gradient(90deg, rgba(0,0,0,0),
   rgba(0,0,0,1)80%), url(https://www.carpediem.life/wp-content/uploads/2020/02/10030-winterlandschaft-mensch-dino-reichmuth-unsplash.jpg);
 }
+.gradient62 {
+  height: 900px;
+  position: relative;
+  background: linear-gradient(90deg, rgba(0,0,0,0),
+  rgba(0,240,0,1)), url(https://www.carpediem.life/wp-content/uploads/2020/02/10030-winterlandschaft-mensch-dino-reichmuth-unsplash.jpg);
+  background-size: cover;
+  background-blend-mode: difference;
+}
 .gradient7 {
   height: 900px;
   position: relative;
