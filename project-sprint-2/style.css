@@ -17,13 +17,34 @@ body {
 }
 
 .tuusiggedanke {
-    color: black;
+    color: white;
     position: absolute;
-    font-size: 20px;
-
+    font-size: 30px;
+    z-index: 1;
 }
 
 #tuusigwrapper {
+    position: relative;
+}
+
+#tuusigwrapper h1 {
+    font-size: 600px;
+    text-align: center;
+    color: #340041;
+    margin: 0;
+    z-index: 3;
+    line-height: 600px;
+    position: relative;
+
+}
+
+#tuusigwrapper h2 {
+    font-size: 315px;
+    text-align: center;
+    color: #340041;
+    margin: 0;
+    z-index: 3;
+    line-height: 315px;
     position: relative;
 }
 
@@ -67,12 +88,23 @@ body {
     background: #070E4B;
 }
 
-.time p {
+.time h1 {
     margin: 0;
+    font-size: 1468px;
+    line-height: 1200px;
 }
 
-svg path {
+.time h2 {
+    margin: 0;
+    font-size: 1468px;
+    line-height: 1200px;
+}
+
+
+svg .chopf {
     stroke-width: 3;
+    stroke: white;
+    fill: none;
     stroke-dasharray: 41786.625;
     stroke-dashoffset: 41786.625;
     animation-name: draw;
@@ -80,6 +112,19 @@ svg path {
       animation-iteration-count: 1;
       animation-fill-mode: forwards;
       animation-timing-function: linear;
+  }
+
+  svg .trouble {
+    stroke-width: 3;
+    stroke: white;
+    fill: none;
+    stroke-dasharray: 41786.625;
+    stroke-dashoffset: 41786.625;
+    animation-name: draw;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
   }
   
   @keyframes draw {
