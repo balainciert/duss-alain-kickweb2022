@@ -574,15 +574,41 @@
         <h2>speeds.</h2>
     </div>
     
-    
-    
-    <a href="https://www.figma.com/file/2SMe0EP6uLnXLtn0QJWmSy/Untitled?node-id=0%3A1" target="blank">Figma Link</a>
-
     <script>
         // 1000 Gedanke erstellen
-        for(let i = 0; i <1000; i++) {
+        for(let i = 0; i <300; i++) {
         const div = document.createElement('div');
         div.classList.add('tuusiggedanke');
+        div.innerHTML = 'Gedanke';
+        div.style.left = getRandomInt(window.innerWidth)+'px';
+        div.style.top = getRandomInt(window.innerHeight)+'px';
+
+        document.getElementById('tuusigwrapper').appendChild(div);
+        }
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        for(let i = 0; i <400; i++) {
+        const div = document.createElement('div');
+        div.classList.add('tuusiggedanke');
+        div.classList.add('two');
+        div.innerHTML = 'Gedanke';
+        div.style.left = getRandomInt(window.innerWidth)+'px';
+        div.style.top = getRandomInt(window.innerHeight)+'px';
+
+        document.getElementById('tuusigwrapper').appendChild(div);
+        }
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        for(let i = 0; i <300; i++) {
+        const div = document.createElement('div');
+        div.classList.add('tuusiggedanke');
+        div.classList.add('three');
         div.innerHTML = 'Gedanke';
         div.style.left = getRandomInt(window.innerWidth)+'px';
         div.style.top = getRandomInt(window.innerHeight)+'px';

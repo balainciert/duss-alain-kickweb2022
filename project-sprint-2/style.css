@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&display=swap');
+
 body {
-    font-family: Bebas Neue Pro;
+    font-family: 'Manrope', sans-serif;
     font-size: 80px;
     color: white;
     margin: 0;
@@ -21,6 +23,29 @@ body {
     position: absolute;
     font-size: 30px;
     z-index: 1;
+    text-rendering: geometricPrecision;
+    font-variation-settings: "wght" 200, "wdth" 50;
+    animation-name: stretch;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.tuusiggedanke.two {
+    animation-delay: 1s;
+}
+
+.tuusiggedanke.three {
+    animation-delay: 2s;
+}
+
+@keyframes stretch {
+    10% {
+        font-variation-settings: "wght" 200, "wdth" 50;
+    }
+    100% {
+        font-variation-settings: "wght" 800, "wdth" 50;
+    }
 }
 
 #tuusigwrapper {
@@ -28,24 +53,38 @@ body {
 }
 
 #tuusigwrapper h1 {
-    font-size: 600px;
+    font-size: 700px;
     text-align: center;
     color: #340041;
     margin: 0;
     z-index: 3;
-    line-height: 600px;
+    line-height: 700px;
     position: relative;
-
+    font-family: 'Manrope', sans-serif;
+    text-rendering: geometricPrecision;
+    font-variation-settings: "wght" 200, "wdth" 50;
+    animation-name: stretch;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #tuusigwrapper h2 {
-    font-size: 315px;
+    font-size: 350px;
     text-align: center;
     color: #340041;
     margin: 0;
     z-index: 3;
-    line-height: 315px;
+    line-height: 250px;
     position: relative;
+    font-family: 'Manrope', sans-serif;
+    text-rendering: geometricPrecision;
+    font-variation-settings: "wght" 200, "wdth" 50;
+    animation-name: stretch;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
 }
 
 .chopf {
