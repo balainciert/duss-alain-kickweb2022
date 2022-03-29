@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+
+
+@media screen and (orientation: landscape){
+    /* some CSS here */
+    }
+@media screen and (max-width: 640px) and (orientation: landscape){
+    /* some CSS here */
+    }
+
+
+body {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 2px;
+    font-size: 80px;
+    color: white;
+    margin: 0;
+}
+
+.gedanke {
+    background-color: #340041;
+    display: block;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 300px;
+}
+
+.tuusiggedanke {
+    font-family: 'WindSong';
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    position: absolute;
+    font-size: 1.8vw;
+    z-index: 1;
+    text-rendering: geometricPrecision;
+    animation-name: stretch;
+    animation-duration: 0.1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.tuusiggedanke.two {
+    animation-delay: 0.05s;
+}
+
+.tuusiggedanke.three {
+    animation-delay: 0.1s;
+}
+
+@keyframes stretch {
+    10% {
+        font-size: 1.8vw;
+
+    }
+    100% {
+        font-size: 3vw;
+
+    }
+}
+
+#tuusigwrapper {
+    position: relative;
+}
+
+#tuusigwrapper h1 {
+    font-size: 40vw;
+    line-height: 700px;
+    letter-spacing: -3vw;
+    text-align: center;
+    color: #340041;
+    margin: 0;
+    padding: 300px 0 0 0;
+    z-index: 3;
+    position: relative;
+    font-family: 'Manrope', sans-serif;
+}
+
+#chopf-container {
+    display: grid; 
+	grid-template-columns: repeat(5, 1fr) ;
+	grid-template-rows: repeat(2, 2fr) ; 
+	gap: 0;
+}
+
+.chopf {
+    display: block;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(0deg, #000, #340041);
+}
+
+.chopf h1 {
+    margin: 0;
+    font-family: 'WindSong';
+    font-weight: 400;
+    font-size: 220px;
+    padding-left: 150px;
+    grid-area: 1 / 1 / 3 / 3; 
+}
+
+.chopf p {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    padding-right: 35px;
+    grid-area: 2 / 3 / 5 / 5;
+}
+
+#chopf-sketch {
+    grid-area: 1 / 1 / 3 / 5;
+}
+
+#chopf-sketch .chopf {
+    stroke-width: 4;
+    fill: none;
+}
+
+.animated-chopf {
+    stroke: white;
+    stroke-dasharray: 41786.625;
+    stroke-dashoffset: 41786.625;
+    animation-name: draw-chopf;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes draw-chopf {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.stars {
+    min-height: 100vh;
+    position: relative;
+    background: #000;
+}
+
+.schlaflos {
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    height: 80vh;
+}
+
+.display {
+    margin: 0;
+    position: relative;
+}
+
+.display p {
+    position: absolute;   
+    left: 52%;
+    top: 11%;
+    text-align: right;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+}
+
+#phone-sketch .st0 {
+    stroke-width: 4;
+    stroke: white;
+    fill: none;
+}
+
+.sticky-stars {
+    top: 0;
+    position: sticky;
+}
+
+.stargroup1 {
+    opacity: 0;
+}
+.stargroup2 {
+    opacity: 0;
+}
+.stargroup3 {
+    opacity: 0;
+}
+.stargroup4 {
+    opacity: 0;
+}
+.stargroup5 {
+    opacity: 0;
+}
+.stargroup6 {
+    opacity: 0;
+}
+
+.animated-stars .stargroup1 {
+    animation-name: draw-stars1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes draw-stars1 {
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-stars .stargroup2 {
+    animation-name: draw-stars2;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes draw-stars2 {
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-stars .stargroup3 {
+    animation-name: draw-stars3;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes draw-stars3 {
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-stars .stargroup4 {
+    animation-name: draw-stars4;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes draw-stars4 {
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-stars .stargroup5 {
+    animation-name: draw-stars5;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes draw-stars5 {
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-stars .stargroup6 {
+    animation-name: draw-stars6;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes draw-stars6 {
+    to {
+        opacity: 1;
+    }
+}
+
+.trouble {
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(0deg, #070E4B, #000);
+    display: grid; 
+	grid-template-columns: repeat(5, 1fr) ;
+	grid-template-rows: repeat(2, 2fr) ; 
+	gap: 0;
+
+}
+
+#trouble-sketch {
+    grid-area: 1 / 1 / 3 / 6;
+}
+
+.trouble p {
+    grid-area: 2 / 4 / 3 / 6;
+    text-align: right;
+    padding-right: 120px;
+    padding-bottom: 120px;
+    margin-top: auto;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#trouble-sketch .trouble {
+    stroke-width: 3;
+    fill: none;
+}
+
+.animated-trouble {
+    stroke: white;
+    stroke-dasharray: 41786.625;
+    stroke-dashoffset: 41786.625;
+    animation-name: draw-trouble;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes draw-trouble {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.pause {
+    display: block;
+    min-height: 100vh;
+    position: relative;
+    background: #070E4B;
+}
+
+.pause h1 {
+    padding-top: 600px;
+    padding-bottom: 200px;
+    margin: 0;
+    font-size: 400px;
+    line-height: 350px;
+    color: black;
+    text-align: center;
+}
