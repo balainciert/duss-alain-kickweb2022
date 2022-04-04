@@ -2,14 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
 
 
-@media screen and (orientation: landscape){
-    /* some CSS here */
-    }
-@media screen and (max-width: 640px) and (orientation: landscape){
-    /* some CSS here */
-    }
-
-
 body {
     font-family: 'Manrope', sans-serif;
     letter-spacing: 2px;
@@ -22,6 +14,7 @@ body {
     background-color: #340041;
     display: block;
     min-height: 100vh;
+    width: 100%;
     position: relative;
     padding-bottom: 300px;
 }
@@ -346,4 +339,85 @@ body {
     line-height: 350px;
     color: black;
     text-align: center;
+}
+
+
+@media screen and (max-width: 640px){
+
+.tuusiggedanke {
+        font-size: 2.7vw;
+    }
+
+@keyframes stretch {
+    10% {
+        font-size: 2.7vw;
+
+    }
+    100% {
+        font-size: 4.5vw;
+
+    }
+}
+
+#chopf-sketch {
+    width: 140vw;
+    height: auto;
+    margin-left: -150px;
+    margin-top: 50px;
+}
+
+.chopf h1 {
+    font-size: 90px;
+    padding-left: 50px;
+}
+
+.chopf p {
+    font-size: 15px;
+    line-height: 15px;
+}
+
+#stars-sketch {
+    transform: rotate(90deg);
+    width: 850px;
+    margin-left: -140px;
+    margin-top: -90px;
+}
+
+.display {
+    padding-bottom: 70%;
+    height: 600px;
+}
+
+.display p {
+    font-size: 23px;
+    top: 16%;
+    left: 57%;
+}
+
+#phone-sketch {
+    height: 90vh;
+    width: 125vw;
+}
+
+.trouble p {
+    grid-area: 1 / 4 / 2 / 6;
+    padding-right: 40px;
+    padding-bottom: 8px;
+    font-size: 30px;
+}
+
+.trouble {
+    padding-top: 180px;
+}
+
+.pause {
+    min-height: 60vh;
+}
+
+.pause h1 {
+    padding-top: 300px;
+    padding-bottom: 100px;
+    font-size: 160px;
+    line-height: 140px;
+}
 }
