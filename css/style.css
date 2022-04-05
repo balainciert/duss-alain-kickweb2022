@@ -1,6 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
 body {
-    font-family: Bebas Neue Pro;
-    font-size: 80px;
-    color: white;
-    background-color: #340041;
+    background: black;
+    margin: 0;
 }
+
+a {
+    color: white;
+    text-align: right;
+    padding-top: 40px;
+    padding-right: 40px;
+    margin: 0;
+    padding: auto;
+    font-size: 40px;
+    font-family: 'DM Sans';
+    text-decoration: none;
+    display: block;
+  }
+  
+  a:hover {
+    background: linear-gradient(180deg, #35d5fd 0%, #e355ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
