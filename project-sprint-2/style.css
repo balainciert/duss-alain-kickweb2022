@@ -365,3 +365,12 @@ body {
     color: black;
     text-align: center;
 }
+
+.copyright {
+    font-size: 12px;
+    color: white;
+    background-color: #070E4B;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
